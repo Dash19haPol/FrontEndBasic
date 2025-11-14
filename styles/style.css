@@ -1,0 +1,160 @@
+
+.body{
+  align-content: center;
+}
+
+.container {
+  margin: 171px 105px 82px 135px;
+  display: flex;
+}
+
+
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+}
+
+.categories {
+  height: 774px;
+  padding-left: 18px;
+  padding-top: 14px;
+  background: #FBFBFB;
+
+}
+
+.categories > span{
+    color: #3D3D3D;
+    font-family: "Cera Pro Medium";
+    font-size: 18px;
+}
+
+.list{
+    padding-left: 12px;
+}
+
+.list_item{
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    color: #3D3D3D;
+    font-family: "Cera Pro Regular";
+    font-size: 15px;
+    line-height: 40px;
+}
+
+.active{
+    color: #46A358;
+    font-weight: 700;
+}
+
+.sale-banner {
+  height: 470px;
+}
+
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  gap: 50px;
+}
+
+
+.filter-bar{
+  display: flex;
+  justify-content: space-between
+}
+
+.main_list {
+  display: flex;
+  gap: 37px;
+}
+
+.main_list_item{
+  color: #3D3D3D;
+  font-family: "Cera Pro Regular";
+}
+
+.main_active{
+  color: #46A358;
+  font-weight: 700;
+  padding-bottom: 7px;
+  border-bottom: 3px solid #46A358;
+  }
+
+.sort{
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.sort > span{
+  color: #3D3D3D;
+  font-family: "Cera Pro Regular";
+
+  }
+
+.plants-row{
+  display: flex;
+  gap: 33px;
+}
+
+.img_space{
+  width: 258px;
+  height: 300px;
+  padding: 31px 4px 19px 4px;
+  background: #FBFBFB;
+}
+
+.plant-card img {
+  width: 250px;
+}
+
+.plant-card span {
+  color: #3D3D3D;
+  font-family: "Cera Pro Regular";
+}
+
+.plant-card .price {
+  color: #46A358;
+  font-family: "Cera Pro Medium";
+  font-size: 18px;
+}
+
+.page-number-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.page-number-list-item {
+  width: 35px;
+  height: 35px;
+  border-radius: 4px;
+  border: 1px solid #E5E5E5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-number-active {
+  background: #46A358;
+  border: none;
+}
+
+.number {
+  color: #3D3D3D;
+  font-family: "Cera Pro Regular";
+  font-size: 18px;
+}
+
+.number-active {
+  color: #FFF;
+}
+
+.page-number-list-item img {
+  width: 18px;
+  height: 18px;
+}
+
+
