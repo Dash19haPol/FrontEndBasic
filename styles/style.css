@@ -172,7 +172,8 @@
     pointer-events: none;
 }
 
-.green-border:hover .card-icons {
+
+.with-icons:hover .card-icons {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
@@ -184,8 +185,15 @@
   background: #FFF;
 }
 
+
 .green-border{
   border-top: 2px solid #46A358;
+  opacity: 0;
+}
+
+.with-icons:hover .green-border {
+  opacity: 1;
+
 }
 
 .discount{
@@ -196,6 +204,11 @@
   padding: 8px;
   position: relative;
   bottom: -50px;
+  opacity: 0;
+}
+
+.with-discount:hover .discount {
+  opacity: 1;
 }
 
 .price-and-old-price{
@@ -209,14 +222,24 @@
   font-size: 18px;
   text-decoration: line-through;
   text-decoration-color:  #A5A5A5;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.4s ease;
+  pointer-events: none;
 }
 
-.green-border > span{
+.with-discount:hover .old-price{
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.with-icons > span{
   position: relative;
   top: -35px;
 }
 
-.green-border > p{
+.with-icons > p{
   position: relative;
   top: -35px;
 }
@@ -224,4 +247,8 @@
 .with-discount{
   position: relative;
   top: -20px;
+}
+
+.icon:hover .basket {
+    fill: #46A358;
 }
