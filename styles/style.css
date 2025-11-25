@@ -159,3 +159,69 @@
 .page-number-list-item:last-child{
   padding: 12px;
 }
+
+.card-icons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    position: relative; 
+    top: -35px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.4s ease;
+    pointer-events: none;
+}
+
+.green-border:hover .card-icons {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+
+.icon{
+  margin: 7px;
+  background: #FFF;
+}
+
+.green-border{
+  border-top: 2px solid #46A358;
+}
+
+.discount{
+  display: inline;
+  background-color: #46A358;
+  color: #FFF;
+  font-family: "Cera Pro Medium";
+  padding: 8px;
+  position: relative;
+  bottom: -50px;
+}
+
+.price-and-old-price{
+  display: flex;
+  gap: 16px;
+}
+
+.old-price{
+  color: #A5A5A5;
+  font-family: "Cera Pro Regular";
+  font-size: 18px;
+  text-decoration: line-through;
+  text-decoration-color:  #A5A5A5;
+}
+
+.green-border > span{
+  position: relative;
+  top: -35px;
+}
+
+.green-border > p{
+  position: relative;
+  top: -35px;
+}
+
+.with-discount{
+  position: relative;
+  top: -20px;
+}
