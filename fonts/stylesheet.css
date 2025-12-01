@@ -5,6 +5,7 @@
         url('CeraPro-Regular.eot?#iefix') format('embedded-opentype'),
         url('CeraPro-Regular.woff') format('woff'),
         url('CeraPro-Regular.ttf') format('truetype');
+        font-weight: 400px;
 }
 
 
@@ -15,4 +16,5 @@
         url('CeraPro-Medium.eot?#iefix') format('embedded-opentype'),
         url('CeraPro-Medium.woff') format('woff'),
         url('CeraPro-Medium.ttf') format('truetype');
+        font-weight: 700px;
 }
