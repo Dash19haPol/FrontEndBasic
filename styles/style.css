@@ -1,3 +1,36 @@
+.loader{
+  width: 60px;
+  height: 60px;
+  border: 5px solid #EAEAEA;
+  border-top: 6px solid #46A358;
+  border-radius: 50%;
+  animation: spin .5s linear infinite;
+}
+
+.white-background{
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  z-index: 1;
+  animation: hide-loader 1s forwards .5s;
+}
+
+@keyframes spin{
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes hide-loader{
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 a{
     cursor: pointer;
     font-family: "Cera Pro Regular";
@@ -150,7 +183,7 @@ button:hover{
     border-radius: 6px;
     background: #46A358;
     color: #fff;
-    padding: 7px 17px;
+    padding: 7px 17px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -252,26 +285,57 @@ button:hover{
 
 .main-categories > span{
     color: #3D3D3D;
-    font-family: "Cera Pro Medium";
+    font-family: "Cera Pro Regular";
     font-size: 18px;
+}
+
+.custom-checkbox{
+  display: flex;
+  align-items: center;
+  width: 250px;
+  justify-content: space-between
+}
+
+.custom-check-icon::before{
+  content: attr(data-count);
+  position: relative;
+  font-family: "Cera Pro Regular";
+  color: #3D3D3D;
+  font-size: 15px;
+
+}
+
+.custom-check-text::before{
+  content: attr(data-text);
+  position: relative;
+  color: #3D3D3D;
+  font-family: "Cera Pro Regular";
+  font-size: 15px;
+  line-height: 40px;
+}
+
+.custom-checkbox input:checked ~ .custom-check-text::before{
+    position: relative;
+    font-family: "Cera Pro Medium";
+    color: #46A358;
+}
+
+.custom-checkbox input:checked ~ .custom-check-icon::before{
+    position: relative;
+    font-family: "Cera Pro Medium";
+    color: #46A358;
+}
+
+.custom-checkbox input{
+  display: none;
 }
 
 .main-list{
     padding-left: 12px;
     margin-bottom: 340px;
 }
+  
 
-.main-list_item{
-    color: #3D3D3D;
-    font-family: "Cera Pro Regular";
-    font-size: 15px;
-    line-height: 40px;
-}
-
-.main-active{
-    color: #46A358;
-    font-weight: 700;
-}
 
 .main-sale-banner {
   height: 470px;
@@ -295,10 +359,6 @@ button:hover{
   gap: 37px;
 }
 
-.main-main_list_item{
-  color: #3D3D3D;
-  font-family: "Cera Pro Regular";
-}
 
 .main-main_active{
   color: #46A358;

@@ -1,3 +1,36 @@
+.loader{
+  width: 60px;
+  height: 60px;
+  border: 5px solid #EAEAEA;
+  border-top: 6px solid #46A358;
+  border-radius: 50%;
+  animation: spin .5s linear infinite;
+}
+
+.white-background{
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  z-index: 1;
+  animation: hide-loader 1s forwards .5s;
+}
+
+@keyframes spin{
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes hide-loader{
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -16,7 +49,6 @@
     position: relative;
     right: -190px;
     bottom: -10px;
-    
 }
 
 .form{
