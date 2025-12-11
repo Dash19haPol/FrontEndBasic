@@ -104,6 +104,7 @@ button:hover{
     transition: 0.4s ease;
     pointer-events: none;
     width: max-content;
+    z-index: 2;
 }
 
 .header-sublist-item{
